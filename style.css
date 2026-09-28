@@ -1,0 +1,96 @@
+/* CONFIGURAÇÕES GERAIS*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    transition: 0.3s;
+}
+
+/* CABECALHO */
+
+.topo{
+    background-color: #1f2937;
+    color: white;
+    padding: 20px 5%;
+}
+.titulo-topo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-topo i{
+    font-size: 30px;
+    color: #f7df1e;
+}
+
+.titulo-topo h1{
+    margin: 0;
+}
+
+/* MENU */
+
+.menu{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    border-radius: 5px;
+}
+
+.menu a:hover{
+    background-color: #374151;
+}
+
+#btn-menu{
+    display: none;
+}
+
+/*CONTEÚDO PRINCIPAL*/
+
+.container{
+    width: 90%;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+/* CARDS*/
+
+.card{
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card h2{
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card h2 i{
+    color: #2563eb;
+}
