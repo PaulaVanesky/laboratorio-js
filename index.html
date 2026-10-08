@@ -9,42 +9,42 @@
 </head>
 <body>
     <header class="topo">
-         <div class="titulo-topo">
-             <i class="bi bi-javascript"></i>
-             <h1>Laboratório JavaScript</h1>
-         </div>
+        <div class="titulo-topo">
+            <i class="bi bi-javascript"></i>
+            <h1>Laboratório JavaScript</h1>
+        </div>
 
-         <button id="btn-menu">
-             <i class="bi bi-list"></i>
-             Menu
-         </button>
-
-         <nav id="menu" class="menu">
-              <a href="#exemplo1">
-                  <i class="bi bi-eye-slash-fill"></i>
-                  Mostrar/Ocultar
-              </a> 
-              <a href="#exemplo2">
-                  <i class="bi bi-pencil-square"></i>
-                  Texto
-              </a>
-              <a href="#exemplo3">
-                  <i class="bi bi-moon-fill"></i>
-                  Tema
-              </a>
-              <a href="#exemplo4">
-                  <i class="bi bi-calculator-fill"></i>
-                  Contador
-              </a>
-              <a href="#exemplo5">
-                  <i class="bi bi-keyboard-fill"></i>
-                  Dados
-              </a>
-              <a href="#exemplo6">
-                  <i class="bi bi-list-ul"></i>
-                  Lista
-              </a>
-         </nav>
+        <button id="btn-menu">
+            <i class="bi bi-list"></i>
+            Menu
+        </button>
+        
+        <nav id="menu" class="menu">
+            <a href="#exemplo1">
+                <i class="bi bi-eye-slash-fill"></i>
+                Mostrar/Ocultar
+            </a>
+            <a href="#exemplo2">
+                <i class="bi bi-pencil-square"></i>
+                Texto
+            </a>
+            <a href="#exemplo3">
+                <i class="bi bi-moon-fill"></i>
+                Tema
+            </a>
+            <a href="#exemplo4">
+                <i class="bi bi-calculator-fill"></i>
+                Contador
+            </a>
+            <a href="#exemplo5">
+                <i class="bi bi-keyboard-fill"></i>
+                Dados
+            </a>
+            <a href="#exemplo6">
+                <i class="bi bi-list-ul"></i>
+                Lista
+            </a>
+        </nav>
     </header>
     <main class="container">
         <section class="card" id="exemplo1">
@@ -63,7 +63,305 @@
                 Esta mensagem apareceu usando JavaScript
             </p>
         </section>
+        <section class="card" id="exemplo2">
+            <h2>
+                <i class="bi bi-pencil-square"></i>
+                2. Alterar texto
+            </h2>
+
+            <p id="texto">
+                Texto original
+            </p>
+
+            <button id="btn-texto">
+                <i class="bi bi-pen"></i>
+                Alterar texto
+            </button>
+        </section>
+
+        <section class="card" id="exemplo3">
+            <h2>
+                <i class="bi bi-palette"></i>
+                3. Alterar tema
+            </h2>
+
+            <p>
+                O botão adiciona ou remove uma classe no elemento body
+            </p>
+
+            <button id="btn-tema">
+                <i class="bi bi-moon"></i>
+                Tema escuro
+            </button>
+
+            <button id="btn-tema-claro">
+                <i class="bi bi-sun"></i>
+                Tema claro
+            </button>
+        </section>
+        <section class="card" id="exemplo4">
+            <h2>
+                <i class="bi bi-calculator"></i>
+                4. Contador
+            </h2>
+
+            <div class="contador">
+                <i class="bi bi-hash"></i>
+                <span id="contador">0</span>
+            </div>
+
+            <div class="grupo-botoes">
+                <button id="btn-menos">
+                    <i class="bi bi-dash"></i>
+                    Diminuir
+                </button>
+
+                <button id="btn-zerar">
+                    <i class="bi bi-arrow-repeat"></i>
+                    Zerar
+                </button>
+
+                <button id="btn-mais">
+                    <i class="bi bi-plus"></i>
+                    Aumentar
+                </button>
+            </div>
+        </section>
+        <section class="card" id="exemplo5">
+            <h2>
+                <i class="bi bi-keyboard"></i>
+                5. Pegar informação de um campo de texto
+            </h2>
+
+            <div class="campo">
+                <i class="bi bi-person"></i>
+
+                <input type="text" id="nome" placeholder="Digite seu nome">
+            </div>
+
+            <button id="btn-nome">
+                <i class="bi bi-check"></i>
+                Mostrar nome
+            </button>
+
+            <p id="resultado-nome"></p>
+        </section>
+        <section class="card" id="exemplo6">
+            <h2>
+                <i class="bi bi-list-check"></i>
+                6. Criar elementos
+            </h2>
+
+            <div class="campo">
+                <i class="bi bi-list"></i>
+
+                <input type="text" id="tarefa" placeholder="Digite um tarefa">
+            </div>
+
+            <button id="btn-adicionar">
+                <i class="bi bi-plus"></i>
+                Adiocionar tarefa
+            </button>
+
+            <ul id="lista">
+
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>
+                <i class="bi bi-person"></i>
+                7. Array e forEach
+            </h2>
+
+            <button id="btn-alunos">
+                <i class="bi bi-person"></i>
+                Mostrar alunos
+            </button>
+
+            <ul id="lista-alunos">
+
+            </ul>
+        </section>
+        <section class="card">
+            <h2>
+                <i class="bi bi-braces"></i>
+                8. Estrutura Condicional
+            </h2>
+
+            <div class="campo">
+                <i class="bi bi-cake2"></i>
+                <input type="number" id="idade" placeholder="Digite a sua idade">
+            </div>
+
+            <button id="btn-idade">
+                <i class="bi bi-search"></i>
+                Verificar idade
+            </button>
+
+            <p id="resultado-idade"></p>
+        </section>
+        <section class="card">
+            <h2>
+                <i class="bi bi-fullscreen"></i>
+                9. Modal
+            </h2>
+
+            <p>
+                Um modal é uma janela que aparece por cima do conteúdo da página
+            </p>
+
+            <button id="btn-abrir">
+                <i class="bi bi-box-arrow-up-right"></i>
+                Abrir Modal
+            </button>
+        </section>
+        <section class="card">
+
+            <h2>
+
+               <i class="bi bi-layout-three-columns"></i>
+
+                10. Sistema de abas
+
+            </h2>
+
+
+            <div class="botoes-abas">
+
+
+                <button
+                    class="aba ativa"
+                    data-conteudo="html"
+                >
+
+                    <i class="bi bi-filetype-html"></i>
+
+                    HTML
+
+                </button>
+
+
+                <button
+                    class="aba"
+                    data-conteudo="css"
+                >
+
+                    <i class="bi bi-filetype-css"></i>
+
+                    CSS
+
+                </button>
+
+
+                <button
+                    class="aba"
+                    data-conteudo="javascript"
+                >
+
+                    <i class="bi bi-filetype-js"></i>
+
+                    JavaScript
+
+                </button>
+
+            </div>
+
+
+            <div
+                id="html"
+                class="conteudo-aba ativo"
+            >
+
+                <h3>
+
+                   <i class="bi bi-filetype-html"></i>
+
+                    HTML
+
+                </h3>
+
+                <p>
+                    HTML cria a estrutura da página.
+                </p>
+
+            </div>
+
+
+            <div
+                id="css"
+                class="conteudo-aba"
+            >
+
+                <h3>
+
+                    <i class="bi bi-filetype-css"></i>
+
+                    CSS
+
+                </h3>
+
+                <p>
+                    CSS cuida da aparência e do layout.
+                </p>
+
+            </div>
+
+
+            <div
+                id="javascript"
+                class="conteudo-aba"
+            >
+
+                <h3>
+
+                    <i class="bi bi-filetype-js"></i>
+
+                    JavaScript
+
+                </h3>
+
+                <p>
+                    JavaScript adiciona comportamento e interação.
+                </p>
+
+            </div>
+
+        </section>
+
     </main>
-    
+
+    <div
+        id="modal"
+        class="modal oculto"
+    >
+
+        <div class="modal-conteudo">
+
+
+            <h2>
+
+                <i class="bi bi-info-circle"></i>
+
+                Exemplo de Modal
+
+            </h2>
+
+
+            <p>
+                Este conteúdo apareceu utilizando JavaScript.
+            </p>
+
+
+            <button id="btn-fechar">
+
+                <i class="bi bi-x-circle"></i>
+                Fechar
+
+            </button>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
